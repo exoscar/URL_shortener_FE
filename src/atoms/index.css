@@ -1,0 +1,41 @@
+/* Navbar Container */
+.navbar-container {
+  padding: 1.25rem; /* Added padding for spacing */
+  display: flex;
+  justify-content: space-between; /* Space between logo and avatar */
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  height: 4rem; /* Fixed height for the header */
+  box-sizing: border-box; /* Include padding and border in width */
+  background-color: #020817; /* Dark background for visibility */
+}
+
+/* Logo */
+.logo-image {
+  height: 3rem; /* Adjusted height to fit within header */
+}
+
+/* Dropdown Menu (Avatar) */
+.dropdown-trigger {
+  width: 2.5rem; /* Tailwind's w-10 */
+  border-radius: 9999px; /* Tailwind's rounded-full */
+  overflow: hidden;
+  margin-left: auto; /* Push the avatar to the extreme right */
+}
+
+/* Dropdown Menu Items */
+.dropdown-item-icon {
+  margin-right: 0.5rem; /* Tailwind's mr-2 */
+  height: 1.5rem; /* Tailwind's h-6 */
+  width: 1.5rem; /* Tailwind's w-6 */
+}
+
+.logout-icon {
+  margin-right: 0.5rem; /* Tailwind's mr-2 */
+  height: 1rem; /* Tailwind's h-4 */
+  width: 1rem; /* Tailwind's w-4 */
+}
+
+.logout-text {
+  color: #f87171; /* Tailwind's text-red-400 */
+}

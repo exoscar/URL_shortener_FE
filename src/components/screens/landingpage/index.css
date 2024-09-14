@@ -1,0 +1,142 @@
+/* Container */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw; /* Full viewport width */
+  height: calc(100vh - 4rem); /* Subtract header height */
+  margin: 0; /* Remove default body margins */
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's width/height */
+  overflow: hidden; /* Prevent scrolling */
+  background-color: #020817; /* Dark background */
+  position: relative; /* Needed to position the footer absolutely */
+}
+
+/* Title */
+.landing-title {
+  margin: 1.5rem 0;
+  font-size: 1.5rem; /* Adjusted for smaller screens */
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  padding: 0 1rem; /* Ensure padding for small screens */
+}
+
+@media (min-width: 640px) {
+  .landing-title {
+    font-size: 2.5rem; /* Larger text on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-title {
+    font-size: 3rem; /* Larger text on large screens */
+  }
+}
+
+/* Tabs */
+.tabs-container {
+  max-width: 350px; /* Slightly smaller for tighter layout */
+  padding: 1rem;
+  border: 2px solid #11294a; /* Border gray */
+  border-radius: 0.75rem;
+  background-color: rgba(75, 85, 99, 0.3); /* bg-gray-600 with opacity */
+  backdrop-filter: blur(10px);
+  width: 100%; /* Ensure tabs container takes full width */
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* No overflow */
+}
+
+.tabs-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tabs-trigger {
+  width: 100%;
+}
+
+/* Card */
+.card-container {
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: rgba(55, 65, 81, 0); /* bg-gray-700 with opacity */
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.25rem; /* Slightly smaller for tight fit */
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for smaller layout */
+  gap: 0.75rem; /* Smaller gap between inputs */
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer */
+
+.submit-button{
+  background-color: aliceblue;
+  color: black;
+}
+/* Bug Form */
+.bug-form-container {
+  width: auto; /* Dynamic width */
+  padding: 1rem;
+  background-color: #173d71;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Ensure gap between the form and the footer */
+  text-align: center;
+  display: flex;
+  flex-direction: row; /* Make input and button in same row */
+  justify-content: center;
+  align-items: center; /* Align items vertically in the center */
+  gap: 1rem; /* Space between the input and the button */
+  margin-top: 1.5rem; /* Gap between tab card and the bug form */
+}
+
+.bug-input {
+  width: 70%; /* Ensure input field is wider */
+  margin-bottom: 0; /* Remove bottom margin since input is now inline with button */
+}
+
+.submit-bug-button {
+  width: auto;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  height: 100%; /* Ensure the button takes up full height to align with input */
+}
+
+.landing-footer {
+  background-color: #11294a;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+.bug-button {
+  background-color: #ff3b3b;
+  color: white;
+  margin-top: 1rem;
+}
